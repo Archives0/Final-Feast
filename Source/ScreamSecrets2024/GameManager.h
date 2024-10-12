@@ -25,13 +25,17 @@ struct FItemData
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Items")
 	UTexture2D* FIcon{};
 
-	FItemData()
-		: FItemType(EItemType::Milk), FIcon(nullptr){}
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Items")
+	FString FDescription{};
 
-	FItemData(EItemType itemType, UTexture2D* icon)
+	FItemData()
+		: FItemType(EItemType::Milk), FIcon(nullptr), FDescription(""){}
+
+	FItemData(EItemType itemType, UTexture2D* icon, FString description)
 	{
 		FItemType = itemType;
 		FIcon = icon;
+		FDescription = description;
 	}
 };
 

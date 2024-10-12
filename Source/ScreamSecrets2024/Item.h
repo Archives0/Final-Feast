@@ -36,9 +36,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Item")
 	UTexture2D* Icon{};
 
-	// Add icon variable
-	// Set icon based on item type
-	// Create item slot UI class
-	// Set UI icon on spawn
-	// Click to use items
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Item")
+	FString Description{};
 };

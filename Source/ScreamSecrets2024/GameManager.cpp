@@ -84,7 +84,7 @@ void UGameManager::AddItems(AItem* item)
 	{
 		UE_LOG(LogTemp, Display, TEXT("Added item %s"), *item->GetName());
 
-		FItemData ItemData(item->ItemType, item->Icon);
+		FItemData ItemData(item->ItemType, item->Icon, item->Description);
 		HeldItemData.Add(ItemData);
 	}
 	else
