@@ -71,23 +71,8 @@ void APlayerChar::DepleteHealth(int value)
 	if (health - value < 0)
 	{
 		health = 0;
-		Death();
+		// Player death handled in Blueprints.
 	}
 	else
 		health -= value;
-}
-
-void APlayerChar::AddItem(AItem* Item)
-{
-
-}
-
-void APlayerChar::ClearItems()
-{
-
-}
-
-void APlayerChar::Death()
-{
-	UE_LOG(LogTemp, Display, TEXT("I am dead lol"));
 }

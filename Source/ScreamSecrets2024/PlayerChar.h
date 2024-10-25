@@ -18,7 +18,6 @@ class SCREAMSECRETS2024_API APlayerChar : public ACharacter
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	void Death();
 
 public:	
 
@@ -51,10 +50,4 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Player")
 	void DepleteHealth(int value);
-
-	UFUNCTION(BlueprintCallable, Category = "Player")
-	void AddItem(AItem* Item);
-
-	UFUNCTION(BlueprintCallable, Category = "Player")
-	void ClearItems();
 };

@@ -70,7 +70,8 @@ void UGameManager::DepleteHunger(int value)
 
 void UGameManager::PlayerDeath()
 {
-	UE_LOG(LogTemp, Display, TEXT("I'm dead asf lol!!!"));
+	// Player death handled in Blueprints for now.
+	UE_LOG(LogTemp, Display, TEXT("The player has died."));
 }
 
 void UGameManager::ClearItems()
